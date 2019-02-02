@@ -24,9 +24,7 @@ test:
   - py.test
   
   tags:
-    - test
-    - docker
-    - oillibrary_base
+    - shared
 
 
 develop:
@@ -39,8 +37,7 @@ develop:
   only:
     - develop
   tags:
-    - docker
-    - build
+    - shared
 
 master:
   stage: build
@@ -52,8 +49,7 @@ master:
   only:
      - master
   tags:
-     - docker
-     - build
+     - shared
   
 production:
   stage: build
@@ -65,5 +61,4 @@ production:
   only:
      - production
   tags:
-     - docker
-     - build
+     - shared
